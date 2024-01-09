@@ -15,3 +15,9 @@ struct Dog {
 var dogOnLeft = Dog(breed: "", color: "brown",lengthInMetres: 1, heightInMetre: 0.5)
 var dogInMiddle = Dog(breed: "", color: "brown", lengthInMetres: 1, heightInMetre: 0.6)
 dogInMiddle.ratioBetweenLengthAndHeight
+
+struct Book {
+    let name : String
+    let author : String
+    let datePublish : String
+}
