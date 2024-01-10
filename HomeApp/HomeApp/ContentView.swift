@@ -59,5 +59,21 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    TabView{
+        ContentView()
+            .tabItem {
+                Image(systemName: "house")
+                Text("Home")
+            }
+        Text("Automation")
+            .tabItem {
+                Image(systemName: "deskclock")
+                Text("Automation")
+            }
+        Text("Discover")
+            .tabItem {
+                Image(systemName: "star.fill" )
+                Text("Discover")
+            }
+    }
 }

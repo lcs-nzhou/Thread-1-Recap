@@ -14,12 +14,12 @@ struct SwiftUIView: View {
                 .frame(width: 100, height: 40)
                 .foregroundColor(.gray)
             HStack{
-                var icon : Image
+               
             }
         }
     }
 }
 
 #Preview {
-    SwiftUIView(icon : (UIImage(systemName: "plus")))
+    SwiftUIView()
 }

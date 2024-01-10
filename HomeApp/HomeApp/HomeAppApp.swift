@@ -11,7 +11,21 @@ import SwiftUI
 struct HomeAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView{
+                ContentView()
+                    .tabItem {
+                        Image(systemName: "house")
+                    }
+                Text("Automation")
+                    .tabItem {
+                        Image(systemName: "deskclock")
+                    }
+                Text("Discover")
+                    .tabItem {
+                        Image(systemName: "star.fill" )
+                    }
+            }
+            
         }
     }
 }
