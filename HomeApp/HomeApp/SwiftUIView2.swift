@@ -25,8 +25,9 @@ struct SwiftUIView2: View {
                 VStack(alignment: .leading){
                     Text(firstText)
                         .foregroundStyle(.white)
+                        .bold()
                     Text(secondText)
-                        .foregroundStyle(.white)
+                        .foregroundStyle(Color("LighterGray"))
                     
                 }
                 .padding()

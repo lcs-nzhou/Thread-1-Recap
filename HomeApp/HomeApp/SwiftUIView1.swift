@@ -16,19 +16,23 @@ struct SwiftUIView1: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
-                .foregroundStyle(.gray)
+                .foregroundStyle(Color("DarkerBlue"))
                 .frame(width: 175, height: 80)
             HStack{
                 Image(systemName: imageOnTheLeft)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(.mint)
+                    .padding(.leading, (30))
                 VStack(alignment: .leading){
                     Text(firstText)
-                        .foregroundStyle(.white)
+                        .foregroundStyle(Color("LighterGray"))
                     Text(secondText)
                         .foregroundStyle(.white)
+                        .bold()
                     Text(thirdText)
-                        .foregroundStyle(.white)
+                        .foregroundStyle(Color("LighterGray"))
                 }
+                .padding(.leading)
+                Spacer()
             }
         }
     }

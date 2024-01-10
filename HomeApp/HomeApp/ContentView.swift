@@ -23,9 +23,9 @@ struct ContentView: View {
                         Spacer()
                     }
                     HStack{
-                        SwiftUIView(firstText: "Climate", secondText: "16.0-20.5°", icon: "fan.fill")
+                        SwiftUIView(firstText: "Climate", secondText: "16.0-20.5°", icon: "fan.fill", iconColor: .cyan)
                             .padding(.leading)
-                        SwiftUIView(firstText: "Security", secondText: "No Alerts", icon: "lock.fill")
+                        SwiftUIView(firstText: "Security", secondText: "No Alerts", icon: "lock.fill", iconColor: .mint)
                         Spacer()
                     }
                     .padding(.bottom)
@@ -51,19 +51,46 @@ struct ContentView: View {
                             .padding(.leading)
                             .foregroundStyle(.white)
                         Image(systemName: "chevron.right")
+                            .foregroundColor(Color("LighterGray"))
                         Spacer()
                     }
                     HStack{
-                        SwiftUIView2(imageOnTheLeft: "lock.fill", firstText: "Network", secondText: "On", backgroundColor: .gray)
-                        SwiftUIView2(imageOnTheLeft: "lock.fill", firstText: "Hub", secondText: "On", backgroundColor: .gray)
+                        SwiftUIView2(imageOnTheLeft: "lock.fill", firstText: "Network", secondText: "On", backgroundColor: Color("DarkerGray"))
+                        SwiftUIView2(imageOnTheLeft: "lock.fill", firstText: "Hub", secondText: "On", backgroundColor: Color("DarkerGray"))
                     }
                     HStack{
-                        RoundedRectangle(cornerRadius: 20)
-                            .frame(width: 175, height: 130)
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 20)
+                                .frame(width: 175, height: 130)
                             .padding(.leading, (10))
+                            .foregroundColor(Color("DarkerGray"))
+                            VStack{
+                                HStack {
+                                    Image(systemName: "lock.fill")
+                                        .foregroundStyle(.mint)
+                                        .padding(.leading, (30))
+                                    Spacer()
+                                }
+                                
+                                HStack {
+                                    Text("Side Door")
+                                        .bold()
+                                        .foregroundStyle(.white)
+                                    .padding(.top, (40))
+                                    .padding(.leading, (20))
+                                    Spacer()
+                                }
+                                HStack {
+                                    Text("Locked")
+                                        .foregroundStyle(Color("LighterGray"))
+                                        .padding(.leading, (20))
+                                    Spacer()
+                                }
+                            }
+                        }
                         VStack {
-                            SwiftUIView2(imageOnTheLeft: "appletv", firstText: "Apple TV", secondText: "Not Playing", backgroundColor: .gray)
-                            SwiftUIView2(imageOnTheLeft: "homepodmini.fill", firstText: "HomePod", secondText: "Not Playing", backgroundColor: .gray)
+                            SwiftUIView2(imageOnTheLeft: "appletv", firstText: "Apple TV", secondText: "Not Playing", backgroundColor: Color("DarkerGray"))
+                            SwiftUIView2(imageOnTheLeft: "homepodmini.fill", firstText: "HomePod", secondText: "Not Playing", backgroundColor: Color("DarkerGray"))
                         }
                     }
                 }
@@ -109,4 +136,5 @@ struct ContentView: View {
                 Text("Discover")
             }
     }
+    .tint(.white)
 }

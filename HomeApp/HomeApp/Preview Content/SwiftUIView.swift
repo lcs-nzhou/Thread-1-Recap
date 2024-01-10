@@ -11,6 +11,7 @@ struct SwiftUIView: View {
     let firstText : String
     let secondText : String
     let icon : String
+    let iconColor : Color
     
     var body: some View {
         ZStack{
@@ -19,12 +20,12 @@ struct SwiftUIView: View {
                 .foregroundColor(Color("DarkerBlue"))
             HStack{
                 Image(systemName: icon)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(iconColor)
                 VStack(alignment: .leading){
                     Text(firstText)
                         .foregroundStyle(.white)
                     Text(secondText)
-                        .foregroundStyle(.white)
+                        .foregroundStyle(Color("LighterGray"))
                 }
             }
         }
@@ -32,5 +33,5 @@ struct SwiftUIView: View {
 }
 
 #Preview {
-    SwiftUIView(firstText: "Climate", secondText: "16.0-20.5°", icon: "fan.fill")
+    SwiftUIView(firstText: "Climate", secondText: "16.0-20.5°", icon: "fan.fill", iconColor: .white)
 }
