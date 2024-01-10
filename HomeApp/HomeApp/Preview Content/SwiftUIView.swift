@@ -8,18 +8,29 @@
 import SwiftUI
 
 struct SwiftUIView: View {
+    let firstText : String
+    let secondText : String
+    let icon : String
+    
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 20)
-                .frame(width: 100, height: 40)
+                .frame(width: 140, height: 50)
                 .foregroundColor(.gray)
             HStack{
-               
+                Image(systemName: icon)
+                    .foregroundStyle(.white)
+                VStack{
+                    Text(firstText)
+                        .foregroundStyle(.white)
+                    Text(secondText)
+                        .foregroundStyle(.white)
+                }
             }
         }
     }
 }
 
 #Preview {
-    SwiftUIView()
+    SwiftUIView(firstText: "Climate", secondText: "16.0-20.5°", icon: "fan.fill")
 }
