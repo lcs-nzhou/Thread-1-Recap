@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     let gradientColors = Gradient(stops: [
-    .init(color: .blue, location: 0),
-    .init(color: .green, location: 0.75),
+        .init(color: Color ("LightBlue"), location: 0),
+    .init(color: Color("DarkBlue"), location: 0.5),
     .init(color: .yellow, location: 1)])
     
     var body: some View {
@@ -36,6 +36,7 @@ struct ContentView: View {
                         .padding(.leading)
                         .font(.largeTitle)
                         .bold()
+                        .foregroundStyle(.white)
                     Spacer()
                 }
                 HStack{
@@ -50,6 +51,7 @@ struct ContentView: View {
                         .padding(.leading)
                         .bold()
                         .font(.headline)
+                        .foregroundStyle(.white)
                     Spacer()
                 }
                 HStack{
@@ -64,6 +66,7 @@ struct ContentView: View {
                 HStack{
                     Text("Basement")
                         .padding(.leading)
+                        .foregroundStyle(.white)
                     Image(systemName: "chevron.right")
                     Spacer()
                 }
