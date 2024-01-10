@@ -36,20 +36,19 @@ struct ContentView: View {
                 Spacer()
             }
             HStack{
-                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                    .frame(width: 100, height: 30)
-                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                    .frame(width: 100, height: 30)
+               SwiftUIView1 (imageOnTheLeft: "door.garage.double.bay.closed", firstText: "Garage", secondText: "Door", thirdText: "Closed")
+                SwiftUIView1(imageOnTheLeft: "cloud.fill", firstText: "Hallway", secondText: "Nest", thirdText: "Heat to 12.0°")
             }
             HStack{
-                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                    .frame(width: 100, height: 30)
-                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                    .frame(width: 100, height: 30)
+                SwiftUIView1(imageOnTheLeft: "lock.fill", firstText: "Living Room", secondText: "Front Door", thirdText: "Locked")
+                SwiftUIView1(imageOnTheLeft: "lock.fill", firstText: "Basement", secondText: "Side Door", thirdText: "Locked")
             }
+            .padding(.bottom)
             HStack{
                 Text("Basement")
+                    .padding(.leading)
                 Image(systemName: "chevron.right")
+                Spacer()
             }
             HStack{
                 RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
