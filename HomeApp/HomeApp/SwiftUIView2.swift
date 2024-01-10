@@ -21,6 +21,7 @@ struct SwiftUIView2: View {
             HStack{
                 Image(systemName: imageOnTheLeft)
                     .foregroundStyle(.white)
+                    .padding(.leading, (30))
                 VStack(alignment: .leading){
                     Text(firstText)
                         .foregroundStyle(.white)
@@ -28,6 +29,8 @@ struct SwiftUIView2: View {
                         .foregroundStyle(.white)
                     
                 }
+                .padding()
+                Spacer()
             }
         }
     }

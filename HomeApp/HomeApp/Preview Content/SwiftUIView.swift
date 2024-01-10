@@ -16,7 +16,7 @@ struct SwiftUIView: View {
         ZStack{
             RoundedRectangle(cornerRadius: 20)
                 .frame(width: 140, height: 50)
-                .foregroundColor(.gray)
+                .foregroundColor(Color("DarkerBlue"))
             HStack{
                 Image(systemName: icon)
                     .foregroundStyle(.white)
