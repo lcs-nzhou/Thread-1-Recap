@@ -16,12 +16,25 @@ struct ContentView: View {
                 Image(systemName: "plus")
                 Image(systemName: "ellipsis.circle")
             }
-            Text("My Home")
-            HStack{
-                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                    .frame(width: 100, height: 30)
+            HStack {
+                Text("My Home")
+                    .padding(.leading)
+                    .font(.largeTitle)
+                    .bold()
+                Spacer()
             }
-            Text("Favorites")
+            HStack{
+                SwiftUIView(firstText: "Climate", secondText: "16.0-20.5°", icon: "fan.fill")
+                SwiftUIView(firstText: "Security", secondText: "No Alerts", icon: "lock.fill")
+            }
+            .padding(.bottom)
+            HStack {
+                Text("Favorites")
+                    .padding(.leading)
+                    .bold()
+                    .font(.headline)
+                Spacer()
+            }
             HStack{
                 RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                     .frame(width: 100, height: 30)
