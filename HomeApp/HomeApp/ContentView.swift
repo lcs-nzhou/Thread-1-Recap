@@ -60,19 +60,15 @@ struct ContentView: View {
                 Spacer()
             }
             HStack{
-                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                    .frame(width: 100, height: 30)
-                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                    .frame(width: 100, height: 30)
+                SwiftUIView2(imageOnTheLeft: "lock.fill", firstText: "Network", secondText: "On", backgroundColor: .gray)
+                SwiftUIView2(imageOnTheLeft: "lock.fill", firstText: "Hub", secondText: "On", backgroundColor: .gray)
             }
             HStack{
-                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                    .frame(width: 100, height: 30)
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 175, height: 130)
                 VStack {
-                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                        .frame(width: 100, height: 30)
-                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                        .frame(width: 100, height: 30)
+                    SwiftUIView2(imageOnTheLeft: "appletv", firstText: "Apple TV", secondText: "Not Playing", backgroundColor: .gray)
+                    SwiftUIView2(imageOnTheLeft: "homepodmini.fill", firstText: "HomePod", secondText: "Not Playing", backgroundColor: .gray)
                 }
             }
         }
