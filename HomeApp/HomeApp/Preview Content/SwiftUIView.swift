@@ -20,7 +20,7 @@ struct SwiftUIView: View {
             HStack{
                 Image(systemName: icon)
                     .foregroundStyle(.white)
-                VStack{
+                VStack(alignment: .leading){
                     Text(firstText)
                         .foregroundStyle(.white)
                     Text(secondText)

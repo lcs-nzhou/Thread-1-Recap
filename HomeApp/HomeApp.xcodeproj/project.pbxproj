@@ -16,6 +16,7 @@
 		7492B7AE2B4DB4210055DDAF /* HomeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7492B7AD2B4DB4210055DDAF /* HomeAppUITestsLaunchTests.swift */; };
 		7492B7BB2B4DB8030055DDAF /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7492B7BA2B4DB8030055DDAF /* SwiftUIView.swift */; };
 		7492B7BD2B4DB97D0055DDAF /* SwiftUIView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7492B7BC2B4DB97D0055DDAF /* SwiftUIView1.swift */; };
+		7492B7BF2B4E28BF0055DDAF /* SwiftUIView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7492B7BE2B4E28BF0055DDAF /* SwiftUIView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		7492B7AD2B4DB4210055DDAF /* HomeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7492B7BA2B4DB8030055DDAF /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		7492B7BC2B4DB97D0055DDAF /* SwiftUIView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView1.swift; sourceTree = "<group>"; };
+		7492B7BE2B4E28BF0055DDAF /* SwiftUIView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				7492B7942B4DB4200055DDAF /* Assets.xcassets */,
 				7492B7962B4DB4200055DDAF /* Preview Content */,
 				7492B7BC2B4DB97D0055DDAF /* SwiftUIView1.swift */,
+				7492B7BE2B4E28BF0055DDAF /* SwiftUIView2.swift */,
 			);
 			path = HomeApp;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			files = (
 				7492B7BD2B4DB97D0055DDAF /* SwiftUIView1.swift in Sources */,
 				7492B7932B4DB41D0055DDAF /* ContentView.swift in Sources */,
+				7492B7BF2B4E28BF0055DDAF /* SwiftUIView2.swift in Sources */,
 				7492B7912B4DB41D0055DDAF /* HomeAppApp.swift in Sources */,
 				7492B7BB2B4DB8030055DDAF /* SwiftUIView.swift in Sources */,
 			);

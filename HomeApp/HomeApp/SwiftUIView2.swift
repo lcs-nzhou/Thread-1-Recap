@@ -1,5 +1,5 @@
 //
-//  SwiftUIView1.swift
+//  SwiftUIView2.swift
 //  HomeApp
 //
 //  Created by Shuyu Zhou on 2024-01-09.
@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct SwiftUIView1: View {
+struct SwiftUIView2: View {
     let imageOnTheLeft : String
     let firstText : String
     let secondText : String
-    let thirdText : String
+    let backgroundColor : Color
     
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
-                .foregroundStyle(.gray)
-                .frame(width: 175, height: 80)
+                .foregroundStyle(backgroundColor)
+                .frame(width: 175, height: 60)
             HStack{
                 Image(systemName: imageOnTheLeft)
                     .foregroundStyle(.white)
@@ -26,8 +26,7 @@ struct SwiftUIView1: View {
                         .foregroundStyle(.white)
                     Text(secondText)
                         .foregroundStyle(.white)
-                    Text(thirdText)
-                        .foregroundStyle(.white)
+                    
                 }
             }
         }
@@ -35,5 +34,5 @@ struct SwiftUIView1: View {
 }
 
 #Preview {
-    SwiftUIView1(imageOnTheLeft: "door.garage.double.bay.closed", firstText: "Garage", secondText: "Door", thirdText: "Closed")
+    SwiftUIView2(imageOnTheLeft: "lock.fill", firstText: "Network", secondText: "On", backgroundColor: .gray)
 }

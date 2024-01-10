@@ -13,8 +13,15 @@ struct ContentView: View {
             HStack{
                 Spacer()
                 Image(systemName: "lines.measurement.horizontal")
+                    .padding(.leading)
+                    .padding(.bottom)
                 Image(systemName: "plus")
+                    .padding(.leading)
+                    .padding(.bottom)
                 Image(systemName: "ellipsis.circle")
+                    .padding(.leading)
+                    .padding(.bottom)
+                    .padding(.trailing)
             }
             HStack {
                 Text("My Home")
@@ -25,7 +32,9 @@ struct ContentView: View {
             }
             HStack{
                 SwiftUIView(firstText: "Climate", secondText: "16.0-20.5°", icon: "fan.fill")
+                    .padding(.leading)
                 SwiftUIView(firstText: "Security", secondText: "No Alerts", icon: "lock.fill")
+                Spacer()
             }
             .padding(.bottom)
             HStack {
